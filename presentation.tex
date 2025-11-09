@@ -1,0 +1,320 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[backend=biber,style=authoryear,sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{Steel and CCS:\\A Practical Path to Cut Emissions Today}
+\author{Elias Julian Grindstrand \quad
+  Farah Said Omar \\
+  Christopher A. Trotter \quad
+  Sander Finnset Ørnes}
+\institute{TEK5300 -- Sustainable Materials \\ University of Oslo}
+\date{\today}
+
+\begin{document}
+
+%====================================
+\frame{\titlepage}
+%====================================
+
+%====================================
+\begin{frame}{Steel: Strong, Essential — and a Climate Problem}
+\centering
+\Large \textbf{Steel is everywhere}\\
+\vspace{0.5cm}
+\small
+\begin{itemize}
+    \item Wind turbines, EVs, buildings, bridges
+    \item \textbf{100\% recyclable}, \textbf{strong}, \textbf{flexible}
+    \item But: \textbf{11\% of global CO$_2$} (SteelWatch, 2025)
+\end{itemize}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{How Much Steel?}
+\small
+\begin{itemize}
+    \item \textbf{1.885 billion tonnes} in 2024
+    \item \textbf{250,000 Eiffel Towers}
+\end{itemize}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{Steel = 11\% of Global CO$_2$}
+\centering
+\Large \textbf{2.33 t CO$_2$ per tonne of steel}\\
+\vspace{0.5cm}
+\small
+\begin{itemize}
+    \item Total: \textbf{3.7 billion tonnes CO$_2$/year}
+    \item \textbf{7\% direct} + \textbf{4\% indirect (power)}
+    \item \textbf{90\% from coal-based blast furnaces}
+\end{itemize}
+\pause
+\vspace{0.5cm}
+\alert{We \textbf{must} change how iron is made}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{How Is Steel Made? (Simplified)}
+\centering
+\includegraphics[width=0.8\linewidth]{steel_processing_simple.png}\\
+\tiny \cite{SteelWatch2025_climate}
+\end{frame}
+
+\begin{frame}{How Is Steel Made? (BFF-BOF vs. EAF)}
+\small
+\begin{columns}[T] % Align top of text and image
+    \begin{column}{0.6\textwidth}
+        \begin{itemize}
+            \item \textbf{70\%}: \alert{BF-BOF} (coal + iron ore $\rightarrow$ steel)
+            \begin{itemize}
+                \item Coke heats + reduces iron ore
+                \item $\rightarrow$ CO$_2$ + molten iron
+            \end{itemize}
+            \item \textbf{30\%}: \alert{EAF} (electricity + scrap $\rightarrow$ steel)
+            \begin{itemize}
+                \item Recycles old steel
+                \item Lower CO$_2$ if green power
+            \end{itemize}
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{steel_bff_bof_eaf_processing_simplified.png}\\
+        \tiny \cite{SteelWatch2025_climate}
+    \end{column}
+\end{columns}
+\end{frame}
+
+%====================================
+
+%====================================
+\begin{frame}{Where Do Emissions Come From?}
+\centering
+\small
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Stage} & \textbf{CO$_2$ (t/t steel)} \\
+\midrule
+Coke making & 0.71 \\
+Blast furnace & 1.41 \\
+Steel refining & 0.21 \\
+\bottomrule
+\textbf{Total} & \textbf{2.33} \\
+\end{tabular}
+\vspace{0.2cm}
+
+\tiny \cite{SteelWatch2025_climate}
+
+\vspace{0.4cm}
+
+\alert{\textbf{90\% from blast furnace (BFG)}}
+
+\end{frame}
+
+%====================================
+
+%====================================
+\begin{frame}{Solution 1: CCS on Blast Furnace Gas (BFG)}
+\centering
+\Large \textbf{Capture CO$_2$ from factory exhaust}\\
+\vspace{0.5cm}
+\small
+\begin{block}{Blast Furnace Gas (BFG)}
+\begin{itemize}
+    \item \textbf{22\% CO$_2$}, 49\% N$_2$, 22\% CO
+    \item \textbf{High CO$_2$ = easy to capture}
+\end{itemize}
+\end{block}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{CCS Challenge: CO$_2$ Must Be Pure for Transport}
+\centering
+\small
+\begin{table}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Impurity} & \textbf{In BFG Capture} & \textbf{Max Allowed (EU)} \\
+\midrule
+CO & 200–5,000 ppm & 100–2,000 ppm \\
+H$_2$S & 40–70 ppm & 5–80 ppm \\
+COS & 130–200 ppm & 0.1–10 ppm \\
+H$_2$O & Saturated & 30–50 ppm \\
+\bottomrule
+\end{tabular}
+\end{table}
+\tiny TCCS-11 (2021), Northern Lights, Porthos
+\pause
+\vspace{0.3cm}
+\alert{\textbf{Extra purification needed}}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{How to Purify CO$_2$ from BFG?}
+\centering
+\small
+\begin{enumerate}
+    \item \textbf{Capture}: Amine or PSA $\rightarrow$ 83–99.7\% CO$_2$
+    \item \textbf{Remove CO, H$_2$S, COS}:
+       \begin{itemize}
+           \item \alert{ZnO adsorption} (H$_2$S, COS)
+           \item \alert{Catalytic oxidation} (CO $\rightarrow$ CO$_2$)
+           \item \alert{Cryogenic distillation} (high purity)
+       \end{itemize}
+    \item \textbf{Dry}: Molecular sieve $\rightarrow$ <50 ppm H$_2$O
+\end{enumerate}
+\pause
+\vspace{0.3cm}
+\alert{Cost: \textbf{+5–15 €/t CO$_2$} for purification}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{Case Study: SSAB Luleå — Partial CCS}
+\centering
+\includegraphics[width=0.8\linewidth]{lulea_simple.pdf}\\
+\tiny Biermann et al., 2019 + WEF 2024
+\vspace{0.3cm}
+\small
+\begin{itemize}
+    \item 3.4 Mt CO$_2$/yr $\rightarrow$ \alert{550 GJ/h waste heat}
+    \item \textbf{Partial CCS on BFG}: 90\% capture
+    \item \textbf{Cuts 36\% site emissions}
+    \item \textbf{Cost}: \alert{28 €/t CO$_2$} (uses waste heat!)
+\end{itemize}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{Partial CCS = Cheapest & Fastest}
+\centering
+\small
+\begin{table}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Option} & \textbf{CO$_2$ Cut} & \textbf{Cost (€/t)} \\
+\midrule
+Full CCS & 76\% & 43 \\
+\rowcolor{green!15}
+\alert{Partial CCS (BFG)} & \alert{36\%} & \alert{28} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\pause
+\vspace{0.5cm}
+\alert{28 €/t = \textbf{cheaper than a tank of petrol}}\\
+\alert{Deployable \textbf{now} with existing tech}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{Future: Hydrogen Steel (H$_2$-DRI + EAF)}
+\centering
+\includegraphics[width=0.7\linewidth]{hydrogen_steel_simple.pdf}\\
+\tiny Hybrit, 2024
+\vspace{0.3cm}
+\small
+\begin{itemize}
+    \item Replace coal with \textbf{green hydrogen}
+    \item CO$_2$ $\rightarrow$ \textbf{H$_2$O} (water!)
+    \item \textbf{Near-zero emissions}
+    \item \alert{3 plants under construction}: Sweden, Germany
+\end{itemize}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{Roadmap to Zero-Emissions Steel}
+\small
+\begin{enumerate}
+    \item \textbf{Now (2025–2030)}: \\
+       \alert{Partial CCS + waste heat} $\rightarrow$ 36\% cut @ 28 €/t
+    \item \textbf{2030–2040}: \\
+       Scale CCS + scrap-EAF (48\% by 2050)
+    \item \textbf{2040+}: \\
+       \alert{H$_2$-DRI + green EAF} $\rightarrow$ near-zero
+\end{enumerate}
+\pause
+\vspace{0.5cm}
+\centering
+\alert{\textbf{No single fix} — we need \textbf{all paths}}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{2025 Tipping Points}
+\small
+\begin{itemize}
+    \item \textbf{China}: No new coal-BF permits (H1 2024)
+    \item \textbf{20/50 top producers}: Net-zero by 2050
+    \item \textbf{H$_2$-DRI plants}: Stegra, thyssenkrupp
+    \item \textbf{ING Bank}: No BF/met coal financing
+    \item \textbf{India}: Green Steel Taxonomy (Dec 2024)
+\end{itemize}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{What You Can Do}
+\centering
+\small
+\begin{itemize}
+    \item \textbf{Ask}: “What’s your steel’s CO$_2$ footprint?”
+    \item \textbf{Support}: Carbon price >60 €/t, green H$_2$
+    \item \textbf{Choose}: Recycled steel when possible
+\end{itemize}
+\pause
+\vspace{0.5cm}
+\Large \alert{Sustainable steel is possible — \\
+and it starts \textbf{today}}
+\end{frame}
+%====================================
+
+%====================================
+\begin{frame}{References}
+\tiny
+\begin{itemize}
+    \item SteelWatch, \textit{Why steelmaking drives climate change} (Jan 2025)
+    \item World Steel Association, \textit{World Steel in Figures 2025}
+    \item Ramboll/Climate Group, \textit{Steel \& Concrete Survey 2024}
+    \item Biermann et al., \textit{IJGGC} \textbf{91}, 102833 (2019)
+    \item Porter et al., \textit{TCCS-11} (2021) – CO₂ purity
+    \item IEA Net Zero by 2050; Hybrit 2024
+\end{itemize}
+\end{frame}
+%====================================
+
+\begin{frame}[allowframebreaks]{References}
+\tiny
+\printbibliography
+\end{frame}
+
+%====================================
+\begin{frame}{Questions?}
+\centering
+\Huge Any questions?\\
+\vspace{1cm}
+\Large Thank you!
+\end{frame}
+%====================================
+
+\end{document}
